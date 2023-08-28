@@ -1,0 +1,21 @@
+ package com.example.foodie.activities
+
+import androidx.appcompat.app.AppCompatActivity
+import android.os.Bundle
+import androidx.navigation.Navigation
+import androidx.navigation.ui.NavigationUI
+import com.example.foodie.R
+import com.google.android.material.bottomnavigation.BottomNavigationView
+
+ class MainActivity : AppCompatActivity() {
+    override fun onCreate(savedInstanceState: Bundle?) {
+        super.onCreate(savedInstanceState)
+        setContentView(R.layout.activity_main)
+
+        val bottomNavigation= findViewById<BottomNavigationView>(R.id.btn_nav)
+        val navCOntroller= Navigation.findNavController(this, R.id.host_fragment)
+
+        NavigationUI.setupWithNavController(bottomNavigation,navCOntroller)
+    }
+
+}
