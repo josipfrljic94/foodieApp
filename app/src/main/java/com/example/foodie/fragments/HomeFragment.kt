@@ -60,6 +60,7 @@ class HomeFragment : Fragment() {
         super.onViewCreated(view, savedInstanceState)
         homeMvvm.getRandomMeal()
         observerRandomMeal()
+        Log.d("test","test")
         onRandomMealClick()
     }
 
