@@ -65,6 +65,7 @@ class HomeFragment : Fragment() {
 
 
 
+
     private fun observerRandomMeal() {
         homeMvvm.observeRandomMeal().observe(viewLifecycleOwner,{t->
                 Glide.with(this@HomeFragment)
