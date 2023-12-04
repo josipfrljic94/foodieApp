@@ -102,7 +102,7 @@
                 android:textStyle="bold"
                 android:textColor="@color/g_black"
                 android:textSize="@dimen/_15ssp"
-                android:text="- Instructions :"
+                android:text="- Recipe :"
                 android:fontFamily="@font/myfont"
                 />
             <TextView

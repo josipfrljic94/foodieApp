@@ -2,6 +2,7 @@
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.util.Log
 import androidx.navigation.Navigation
 import androidx.navigation.ui.NavigationUI
 import com.example.foodie.R
@@ -13,9 +14,9 @@ import com.google.android.material.bottomnavigation.BottomNavigationView
         setContentView(R.layout.activity_main)
 
         val bottomNavigation= findViewById<BottomNavigationView>(R.id.btn_nav)
-        val navCOntroller= Navigation.findNavController(this, R.id.host_fragment)
+        val navController= Navigation.findNavController(this, R.id.host_fragment)
 
-        NavigationUI.setupWithNavController(bottomNavigation,navCOntroller)
+        NavigationUI.setupWithNavController(bottomNavigation,navController)
     }
 
 }

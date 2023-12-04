@@ -1,6 +1,7 @@
 plugins {
     id 'com.android.application'
     id 'kotlin-android'
+    id 'com.google.gms.google-services'
 }
 
 android {
@@ -38,6 +39,8 @@ android {
 apply plugin: 'kotlin-kapt'
 dependencies {
     implementation 'androidx.legacy:legacy-support-v4:1.0.0'
+    implementation 'com.google.firebase:firebase-database:20.0.5'
+    implementation 'com.google.firebase:firebase-auth:21.0.1'
     def nav_version = "2.3.5"
     def lifecycle_version = "2.4.0"
     def room_version = "2.3.0"
