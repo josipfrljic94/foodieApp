@@ -11,8 +11,15 @@
         android:id="@+id/favoritesFragment"
         />
 
+
     <item android:title="Category"
         android:icon="@drawable/ic_baseline_category_24"
         android:id="@+id/categoryFragment"
         />
+
+    <item android:title="User"
+        android:icon="@drawable/ic_user"
+        android:id="@+id/userFragment"
+        />
+
 </menu>
